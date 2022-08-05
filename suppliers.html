@@ -1,0 +1,245 @@
+<!doctype html>
+        <html lang="en">
+  <head>
+      <title>Inventory</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    </head>
+    <body>
+        <!--top-navbar-->
+        
+        <!--top-navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+          <div class="container-fluid">
+            <!--- sidenav trigger  button -->
+              <button class="navbar-toggler" type="button" 
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  <span class="navbar-toggler-icon"
+                  data-bs-target="#offcanvasExample"></span>
+                </button>
+              <!--- sidenav button-->
+              <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#topNavBar"
+              aria-controls="topNavBar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="topNavBar" >
+             
+              <ul class=" d-flex ms-auto  navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-bell-fill"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle ms-2"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="bi bi-person-fill"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#"> action</a></li>
+                    
+                  </ul>
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+        </nav>
+
+         <!-----top-navbar---->
+
+         <!------Side-Navbar-->
+         
+        
+        
+        <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="offcanvasExample"
+         aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <div class="mt-5 mx-5 align-content-center">
+                <img src="./images/Logo.png"/>
+            </div>
+            <!-- Cross button for the side-navbar--> 
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body p-4">
+            <nav class="navbar  menubar ">
+                <ul class="navbar-nav  ">
+                    <li>
+                        <a href="dashboard.html" class="nav-link px-5 menu ">
+                           <span>Dashboard</span> 
+                        </a>
+                    </li>
+                    <li>
+                      <a href="inventory.html" class="nav-link px-5 menu ">
+                         <span>Inventory</span> 
+                      </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link px-5  menu ">
+                       <span>Staff</span> 
+                    </a>
+                </li>
+                <li>
+                  <a href="customers.html" class="nav-link px-5  menu ">
+                     <span>Customer</span> 
+                  </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-5  active menu ">
+                   <span>
+                     Suppliers
+                   </span> 
+                </a>
+                <li>
+                  <a href="statistics.html" class="nav-link px-5  menu ">
+                     <span>Statistics</span> 
+                  </a>
+              </li>
+              <li>
+                <a href="invoices.html" class="nav-link px-5  menu ">
+                   <span>Invoices</span> 
+                </a>
+            </li>
+            </li>
+
+                </ul>
+
+            </nav>
+                
+            
+           
+            </div>
+            
+          </div>
+        </div>
+        <!---Sidenav bar -->
+          <div class="container-fluid ">
+            <div class="row w-100 h-100 d-flex justify-content-center mt-4 main_div">
+                <div class="col-12 col-lg-6 col-sm-6 col-md-12 col-xxl-5">
+                   <h4>Request order</h4>
+                    <div class="card mt-4 mb-5 px-5 main_card">
+                        <div class="row mt-3">
+                            <div class="col-12 mb-1">
+                                <div >
+                                    <img src="./images/Logo.png" class="figure-img img-fluid "/>
+
+                                </div>
+                    
+                            </div>
+                            </div>
+                            <div  class="row ">
+                                <div class="col-12 m-">
+                                    <div >
+                                        <span>Send email</span>                            
+                                    </div>
+                        
+                                </div>
+                            </div>
+           
+                        <div class="form_container  ">           
+                            <form class=" myform">
+                                <div class="mb-2 row ">
+                                    <label  class="col-6 col-lg-4 col-md-4 col-sm-6 col-form-label "
+                                     style="align-content:right;"><span style="margin-right:17px;" >To</span></label>
+                                    <div class="col-sm-12 col-12 col-lg-8 col-md-8" >
+                                        <input type="text" class="form-control" id="name">
+                                      </div>
+                                    
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="name" class="col-8 col-lg-4 col-md-4 col-sm-6 col-form-label "
+                                     style="align-content:right;"><span>Name</span></label>
+                                    <div class="col-sm-12 col-12 col-lg-8 col-md-8">
+                                      <input type="text" class="form-control" id="name">
+                                    </div>
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="isbn" class="col-6 col-lg-4 col-md-4 col-sm-6 col-form-label"><span >ISBN</span></label>
+                                    <div class="col-sm-12 col-12 col-lg-8 col-md-8">
+                                      <input type="isbn" class="form-control" id="isbn">
+                                    </div></div>
+                                    <div class="mb-2 row">
+                                        <label for="quantity" class="col-8 col-lg-4 col-md-4 col-sm-6 col-form-label"><span style="font-size: 14px ; ">Quantity</span></label>
+                                        <div class="col-sm-12 col-12 col-lg-8 col-md-8">
+                                            <select class="form-select form-control">
+                                                <option selected>20</option>
+                                            </select>
+                                        </div>
+                                      </div>
+                                      <div class="mb-2 row">
+                                        <label for="inputPassword" class="col-6 col-lg-4 col-md-4 col-sm-6 col-form-label"></label>
+                                        <div class="col-sm-12 col-12 col-lg-8 col-md-8">
+                                            <div class="d-grid   mx-0 row" >
+                                                <button type="button" class="btn btn-block btn-success  login_btn">Submit</button>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="mb-2 row">
+                                        <label for="inputPassword" class="col-6 col-lg-4 col-md-4 col-sm-6 col-form-label"></label>
+                                        <div class="col-sm-12 col-12 col-lg-8 col-md-8">
+                                            <div class="d-grid  mx-0 row">
+                                                <button type="button" class="btn btn-block content_btn ">Cancel</button>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      
+                                  </div>
+                                
+                                                           
+                            </form>
+
+                        </div>
+                       
+                    </div>
+                </div>
+       </div>
+           
+        </div>
+          
+        
+                    
+                     
+                    
+
+                 
+               
+              </div>
+
+            </div>
+
+          </div>
+
+       
+          <script src="./js/bootstrap.bundle.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+          <script src="./js/jquery-3.5.1.js"></script>
+          <script src="./js/jquery.dataTables.min.js"></script>
+          <script src="./js/dataTables.bootstrap5.min.js"></script>
+          <script src="./js/script.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+
+</html>

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg {
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+.main_div {
+  height: 100vh;
+}
+.main_card {
+  border: none;
+  border-top: 5px;
+  background-color: #212121;
+  width: 60%;
+  margin: auto;
+}
+
+.form_container {
+  width: 100%;
+  text-align: center;
+  margin: 7px auto 20px;
+}
+.myform {
+  padding: 3px;
+}
+
+span {
+  color: #c4c4c4;
+  font-size: 0.9rem;
+}
+
+.login_btn {
+  background-color: #0a7108;
+  color: #c4c4c4;
+  border-radius: 0%;
+}
+
+.form-control {
+  margin: auto;
+  padding: 0.00375rem 0.075rem;
+}
+
+/****** navbars *****/
+.bar {
+  color: #212121;
+  color: #3c3c3b, #938e8e, #c4c4c4, #0a7108;
+}
+/*  top-navbar */
+
+.navbar {
+  background-color: #938e8e !important;
+}
+
+/* creating variable*/
+:root {
+  --offcanvas-width: 250px;
+}
+
+/** Side Navbar **/
+.sidebar-nav {
+  width: var(--offcanvas-width);
+  background-color: #212121;
+  color: #c4c4c4;
+}
+
+.menubar {
+  background-color: #212121 !important;
+}
+/* Nav options */
+.menu span {
+  font-size: 1.2rem;
+}
+
+/*active links */
+a.menu span:hover {
+  color: #030302;
+}
+
+.active {
+  background-color: #3c3c3b !important;
+}
+
+.active > .menu :hover {
+  color: #c4c4c4 !important;
+  background-color: aqua;
+}
+
+/* Side menu bar */
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+
+/* fixing offcanvas 
+changing the default settings */
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+
+  .offcanvas-backdrop::before {
+    display: none !important;
+  }
+
+  .sidebar-nav {
+    transform: none;
+    visibility: visible !important;
+    -webkit-transform: none;
+    height: calc(100% - var(--topNavbarHeight));
+  }
+}
+
+/** Card content inventory **/
+.card_content {
+  position: relative;
+  background-color: white;
+  width: 60%;
+  margin: auto;
+}
+.content_btn {
+  margin: auto;
+  background-color: #3c3c3b;
+  color: #938e8e;
+  width: 100%;
+  border-radius: 0%;
+}
+
+table td {
+  border-color: #212121 !important;
+}
+
+.form-control {
+  border-radius: 0%;
+}
+
+/** suppliers  **/
