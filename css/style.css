@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 .bg {
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
@@ -20,6 +21,9 @@
   background-size: cover;
 }
 .main_div {
+  height: 100vh;
+}
+.main_div_est {
   height: 100vh;
 }
 .test{
